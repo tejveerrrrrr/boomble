@@ -1,5 +1,5 @@
 const questions = [
-    { img: "images/pic1.jpeg", answer: "tej's birthday" },
+    { img: "images/pic1.jpeg", answer: "tejs birthday" },
     { img: "images/pic2.jpeg", answer: "first hockey game" },
     { img: "images/pic3.jpeg", answer: "first date" },
     { img: "images/pic4.jpeg", answer: "water lantern festival" },
@@ -24,7 +24,7 @@ const questions = [
   
     const correct = questions[current].answer.toLowerCase();
   
-    // forgiving comparison 🥰
+
     if (input && (correct.includes(input) || input.includes(correct))) {
       current++;
   
@@ -36,7 +36,7 @@ const questions = [
         showFinalQuestion();
       }
     } else {
-      feedback.textContent = "Try again 💕";
+      feedback.textContent = "Try again";
     }
   }
   
