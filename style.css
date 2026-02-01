@@ -1,0 +1,121 @@
+/* Base styles (desktop + mobile) */
+body {
+    font-family: Arial, sans-serif;
+    background: pink;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* INTRO SCREEN */
+  .intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #ffd6e8, #fff0f6);
+    padding: 20px;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .intro button {
+    font-size: 1.2rem;
+    padding: 14px 32px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ff5c8a;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .intro button:hover {
+    background-color: #ff3b6f;
+    transform: scale(1.05);
+  }
+  
+  /* GAME CONTAINER */
+  .container {
+    margin-top: 40px;
+    padding: 0 20px; /* prevents edge clipping on iPad */
+  }
+  
+  /* Images */
+  img {
+    width: 300px;
+    max-width: 90%; /* key for iPad + phones */
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Inputs feel nicer on touch devices */
+  input {
+    padding: 12px;
+    font-size: 16px;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  /* Bigger, tappable buttons */
+  button {
+    padding: 14px 24px;
+    font-size: 18px;
+    margin: 12px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    background-color: #ff5c8a;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #ff3b6f;
+  }
+  
+  /* Feedback text */
+  #feedback {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* iPad + phone optimization */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 26px;
+    }
+  
+    .intro h1 {
+      font-size: 2.5rem;
+    }
+  
+    img {
+      width: 100%;
+      max-width: 350px;
+    }
+  
+    input {
+      width: 90%;
+      font-size: 18px;
+    }
+  
+    button {
+      font-size: 20px;
+      padding: 16px 28px;
+    }
+  }
+  

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boomble</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- INTRO SCREEN -->
+  <div id="intro" class="intro">
+    <h1>💖 BOOMBLE 💖</h1>
+    <p>
+      A game about <strong>Boomba</strong> and <strong>Boombi</strong><br>
+    
+    </p>
+    <button onclick="startGame()">Play ▶</button>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div id="game" style="display: none;">
+    <div class="container">
+      <h1 id="question">When was this taken?</h1>
+
+      <img id="photo" src="images/pic1.jpeg" alt="Boomba and Boombi">
+
+      <input type="text" id="answer" placeholder="Your answer here">
+      <button onclick="checkAnswer()">Submit</button>
+
+      <p id="feedback"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
